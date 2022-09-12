@@ -1,0 +1,242 @@
+@media screen and (min-width:480px) {
+	.section-advantages {
+		padding: 60px 0px;
+	}
+
+	.section-title {
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+
+	.section-title__section-portfolio,
+	.section-title__section-advantages {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	.list-advantages {
+		display: block;
+	}
+
+	.list-advantages__item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+
+
+	.list-advantages__box {
+		display: flex;
+		align-items: center;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		width: 450px;
+		height: 120px;
+		margin: auto;
+		background-color: #f5f4fa;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-bottom: 30px;
+	}
+
+	.list-advantages-text__box {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+
+	.list-advantages__title {
+		font-size: $text-font-size;
+		font-size: 14px;
+		line-height: 1.14;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.list-advantages__text {
+		font-size: $text-font-size;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+		color: $text-color;
+		text-align: left;
+	}
+}
+
+
+@media screen and (min-width:768px) {
+	.section-title {
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+
+	.section-title__section-portfolio,
+	.section-title__section-advantages {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	.list-advantages {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.list-advantages__item {
+		flex-basis: calc(100% / 2 - 15px);
+		margin-bottom: 30px;
+	}
+
+	.list-advantages__box {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 354px;
+		height: 120px;
+		background-color: #f5f4fa;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-bottom: 30px
+	}
+
+	.list-advantages-text__box {
+		max-width: 354px;
+		margin: 0 auto;
+	}
+
+	.list-advantages__title {
+		font-size: $text-font-size;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		text-align: left;
+
+	}
+
+	.list-advantages__text {
+		font-size: $text-font-size;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+		color: $text-color;
+		width: 100%;
+		max-width: 347px;
+		text-align: center;
+		align-items: center;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+}
+
+
+@media screen and (min-width:1200px) {
+	.section-advantages {
+		padding: 94px 0px;
+	}
+
+	.section-title {
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+
+	.section-title__section-portfolio,
+	.section-title__section-advantages {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	.list-advantages {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 30px;
+
+	}
+
+	.list-advantages__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 270px;
+		height: 120px;
+		background-color: #f5f4fa;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-bottom: 30px;
+	}
+
+	.list-advantages-text__box {
+		max-width: 270px;
+		margin: 0 auto;
+	}
+
+	.list-advantages__title {
+		font-size: $text-font-size;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $priamary-color;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.list-advantages__text {
+		font-size: $text-font-size;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+		color: $text-color;
+		text-align: left;
+	}
+}

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@500&family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- <link rel="stylesheet" href="css/style.css" />-->
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <!--хедер-->
+        <header class="header">
+            <div class="container">
+                <div class="header-nav">
+                    <a href="" class="logo header__logo link"
+                        >Web<span class="logo__logo-dark">Studio</span></a
+                    >
+
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="index.html"
+                                >Студія</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a
+                                class="site-nav__link site-nav__link--current link"
+                                href="portfolio.html"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="">Контакти</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-nav__contacts list">
+                        <li class="contacts__item">
+                            <a
+                                href="info@devstudio.com"
+                                class="contacts__link link"
+                            >
+                                <svg
+                                    class="contacts__icon mail"
+                                    width="16px"
+                                    height="12px"
+                                >
+                                    <use
+                                        href="./images/icons.svg/sprite.svg#icon-mail"
+                                    ></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a
+                                href=" +380961111111"
+                                class="contacts__link link"
+                            >
+                                <svg
+                                    class="contacts__icon phone"
+                                    width="10px"
+                                    higth="16px"
+                                >
+                                    <use
+                                        href="./images/icons.svg/sprite.svg#icon-smartphone"
+                                    ></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="menu-open-btn" data-menu-open>
+                        <svg
+                            class="icon-open"
+                            data-menu-open
+                            width="40"
+                            hidth="40"
+                        >
+                            <use
+                                class="icon-menu"
+                                href="./images/icons.svg/sprite.svg#icon-menu"
+                            ></use>
+                        </svg>
+                    </button>
+
+                    <div class="menu-container is-hidden" data-menu>
+                        <button
+                            type="button"
+                            class="menu-btn-close"
+                            data-menu-close
+                        >
+                            <svg
+                                class="icon-close"
+                                data-menu-close
+                                width="40"
+                                hidth="40"
+                            >
+                                <use
+                                    class="icon-close"
+                                    href="./images/icons.svg/sprite.svg#icon-close"
+                                ></use>
+                            </svg>
+                        </button>
+                        <div class="container">
+                            <ul class="menu-nav list" menu-nav>
+                                <li class="menu-nav__item">
+                                    <a
+                                        class="menu-nav__link link"
+                                        href="index.html"
+                                        >Студія</a
+                                    >
+                                </li>
+                                <li class="menu-nav__item">
+                                    <a
+                                        class="menu-nav__link menu-nav__link--current link"
+                                        href="portfolio.html"
+                                        >Портфоліо</a
+                                    >
+                                </li>
+                                <li class="menu-nav__item">
+                                    <a class="menu-nav__link link" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <ul class="menu-contacts list">
+                                <li class="menu-contacts__item">
+                                    <a
+                                        href=" +380961111111"
+                                        class="menu-contacts__link menu-contacts__link--curent link"
+                                    >
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                                <li class="menu-contacts__item">
+                                    <a
+                                        href="info@devstudio.com"
+                                        class="menu-contacts__link link"
+                                    >
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-social list">
+                                <li class="menu-social__item">
+                                    <a
+                                        class="menu-social__link link"
+                                        href="index.html"
+                                        >Студія</a
+                                    >
+                                </li>
+                                <li class="menu-social__item">
+                                    <a
+                                        class="menu-social__link menu-social__link--curent link"
+                                        href="portfolio.html"
+                                        >Портфоліо</a
+                                    >
+                                </li>
+                                <li class="menu-social__item">
+                                    <a class="menu-social__link link" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                                <li class="menu-social__item">
+                                    <a class="menu-social__link link" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!--портфоліо-->
+            <section class="section__section-portfolio">
+                <div class="container">
+                    <h1 class="section__title--section-portfolio">Portfolio</h1>
+                    <ul class="buttons">
+                        <button type="button" class="button">Все</button>
+                        <button type="button" class="button">Веб-сайти</button>
+                        <button type="button" class="button">Додатки</button>
+                        <button type="button" class="button">Дизайн</button>
+                        <button type="button" class="button">Маркетин</button>
+                    </ul>
+                    <ul class="portfolio-list list">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img1d-1x.webp,
+                                                ./images/portfolio/desktop-portfolio/img1d-2x.webp
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img1d-1x.jpg,
+                                                ./images/portfolio/desktop-portfolio/img1d-2x.jpg
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img1t-1x.webp,
+                                                ./images/portfolio/tablet-portfolio.img/img1t-2x.webp
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img1t-1x.jpg,
+                                                ./images/portfolio/tablet-portfolio.img/img1t-2x.jpg
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img1-1x.webp,
+                                                ./images/portfolio/mobile-portfolio.img/img1-2x.webp
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img1-1x.jpg,
+                                                ./images/portfolio/mobile-portfolio.img/img1-2x.jpg
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="./images/portfolio/img1.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Веб-сайт"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Технокряк
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img2d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img2d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img2d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img2d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img2t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img2t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img2t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img2t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img2-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img2-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img2-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img2-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)"
+                                        />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="./images/portfolio/mobile-portfolio.img/img2-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Постер New Orlean vs Golden Star"
+                                        />
+                                    </picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Постер New Orlean vs Golden Star
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img3d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img3d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img3d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img3d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img3t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img3t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img3t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img3t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img3-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img3-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img3-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img3-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)"
+                                        />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="./images/portfolio/mobile-portfolio.img/img3-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Ресторан Seafood"
+                                        />
+                                    </picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Ресторан Seafood
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img4d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img4d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img4d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img4d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img4t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img4t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img4t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img4t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img4-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img4-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img4-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img4-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="  ./images/portfolio/mobile-portfolio.img/img4-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Проєкт Prime"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Проєкт Prime
+                                    </h2>
+                                    <p class="wrap-portfolio__text">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img5d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img5d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img5d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img5d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img5t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img5t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img5t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img5t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img5-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img5-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img5-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img5-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="  ./images/portfolio/mobile-portfolio.img/img5-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Проєкт Boxes"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Проект Boxes
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img6d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img6d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img6d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img6d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img6t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img6t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img6t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img6t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img6-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img6-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img6-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img6-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src=" ./images/portfolio/mobile-portfolio.img/img6-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Веб-сайт"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Inspiration has no Borders
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img7d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img7d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img7d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img7d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img7t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img7t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img7t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img7t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img7-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img7-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img7-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img7-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src=" ./images/portfolio/mobile-portfolio.img/img7-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Видання Limited Edition"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Видання Limited Edition
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img8d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img8d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img8d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img8d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img8t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img8t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img8t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img8t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img8-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img8-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img8-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img8-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="./images/portfolio/mobile-portfolio.img/img8-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Проект LAB"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Проект LAB
+                                    </h2>
+                                    <p class="wrap-portfolio__text">
+                                        Маркетинг
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img9d-1x.webp 1x,
+                                                ./images/portfolio/desktop-portfolio/img9d-2x.webp 2x
+                                            "
+                                            media="(min-width:1200px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/desktop-portfolio/img9d-1x.jpg 1x,
+                                                ./images/portfolio/desktop-portfolio/img9d-2x.jpg 2x
+                                            "
+                                            media="(min-width:1200px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img9t-1x.webp 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img9t-2x.webp 2x
+                                            "
+                                            media="(min-width:768px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/tablet-portfolio.img/img9t-1x.jpg 1x,
+                                                ./images/portfolio/tablet-portfolio.img/img9t-2x.jpg 2x
+                                            "
+                                            media="(min-width:768px)" />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img9-1x.webp 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img9-2x.webp 2x
+                                            "
+                                            media="(min-width:480px)"
+                                            type="image/webp" />
+
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/mobile-portfolio.img/img9-1x.jpg 1x,
+                                                ./images/portfolio/mobile-portfolio.img/img9-2x.jpg 2x
+                                            "
+                                            media="(min-width:480px)" />
+                                        <img
+                                            class="portfolio-overlay__img"
+                                            src="./images/portfolio/mobile-portfolio.img/img9-1x.jpg"
+                                            width="450"
+                                            height="294"
+                                            alt="Мобільний додаток"
+                                    /></picture>
+                                    <p class="portfolio-overlay__text">
+                                        После Bootcamp вы станете независимым
+                                        full stack разработчиком, спрос на
+                                        которого на рынке IT растет с каждым
+                                        днем. Bootcamp - это то, что нужно для
+                                        успеха: 5 дней в неделю, 8 рабочих часов
+                                        в день.
+                                    </p>
+                                </div>
+                                <div class="wrap-portfolio-text">
+                                    <h2 class="wrap-portfolio__title">
+                                        Growing Business
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!--подвал-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footter__address">
+                        <a class="logo footer__logo link" href="">
+                            Web<span class="logo__logo-white">Studio</span></a
+                        >
+                        <address>
+                            <ul class="address-list list">
+                                <li class="address-list__item">
+                                    <a
+                                        class="address-list__link address link"
+                                        href="https://https://goo.gl/maps/Vq8eRykNfUg5gmFL7"
+                                        >м. Київ, пр-т Лесі Українки, 26</a
+                                    >
+                                </li>
+                                <li class="address-list__item">
+                                    <a
+                                        class="address-list__link link"
+                                        href="mailto:info@example.com"
+                                        >info@example.com</a
+                                    >
+                                </li>
+                                <li class="address-list__item">
+                                    <a
+                                        class="address-list__link link"
+                                        href="tel:+380961111111"
+                                        >+38 096 111 11 11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="social-icons__footer">
+                        <h3 class="social-icons__title">приєднуйтесь</h3>
+                        <ul class="social-icons__list">
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
+                                    <svg
+                                        class="icon-footer"
+                                        width="20px"
+                                        height="20px"
+                                    >
+                                        <use
+                                            href="./images/icons.svg/sprite.svg#icon-instagram"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
+                                    <svg
+                                        class="icon-footer"
+                                        width="20px"
+                                        height="20px"
+                                    >
+                                        <use
+                                            href="./images/icons.svg/sprite.svg#icon-twitter"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
+                                    <svg
+                                        class="icon-footer"
+                                        width="20px"
+                                        height="20px"
+                                    >
+                                        <use
+                                            href="./images/icons.svg/sprite.svg#icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
+                                    <svg
+                                        class="icon-footer"
+                                        width="20px"
+                                        height="20px"
+                                    >
+                                        <use
+                                            href="./images/icons.svg/sprite.svg#icon-linkedin"
+                                            width="20px"
+                                            height="20px"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="footer-form">
+                        <h3 class="footer-form__title">
+                            Підпишіться на розсилку
+                        </h3>
+                        <div class="footer-form__text">
+                            <input
+                                class="footer-form__input"
+                                type="mail"
+                                name="mail"
+                                id="mail-footer"
+                                required
+                                minlength="6"
+                                maxlength="12"
+                                placeholder="E-mail"
+                            />
+                            <button type="submit" class="footer-form__button">
+                                Підписатися
+                                <svg
+                                    class="icon-telegram"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg/sprite.svg#icon-telegram"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/modal.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+            })
+        </script>
+    </body>
+</html>

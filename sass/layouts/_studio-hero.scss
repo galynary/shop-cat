@@ -1,0 +1,202 @@
+@media screen and (min-width:480px) {
+	.studio-hero {
+		text-align: center;
+		background-color: #2f303a;
+		padding: 118px 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 1600px;
+		width: 100%;
+		height: 400px;
+		margin: 0 auto;
+		background-size: cover;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)),
+			url('../images/studio/hero-1-480.jpg');
+	}
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.studio-hero {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)),
+				url('../images/studio/hero-2-480.jpg');
+		}
+	}
+
+
+	.studio-hero__title {
+		font-size: 26px;
+		line-height: 1.61;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		align-items: center;
+		color: #ffffff;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 42px;
+		width: 360px;
+	}
+
+	.studio-hero__button {
+		width: 200px;
+		height: 50px;
+		background: $accent-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		display: inline-block;
+		border: 1px solid transparent;
+		overflow: hidden;
+		transition: backround-color $transion,
+			transform $transion;
+
+		&:hover {
+			background-color: #176eb5;
+			transform: scale(1.03);
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width:768px) {
+	.studio-hero {
+		text-align: center;
+		background-color: #2f303a;
+		padding: 200px 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 1600px;
+		width: 100%;
+		height: 600px;
+		margin: 0 auto;
+		background-size: cover;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)),
+			url('../images/studio/hero-1-768.jpg');
+	}
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.studio-hero {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)),
+				url('../images/studio/hero-2-768.jpg');
+		}
+	}
+
+	.studio-hero__title {
+		font-size: 26px;
+		line-height: 1.6;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		align-items: center;
+		color: #ffffff;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 45px;
+		width: 612px;
+	}
+
+	.studio-hero__button {
+		width: 200px;
+		height: 50px;
+		background: $accent-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		display: inline-block;
+		border: 1px solid transparent;
+		overflow: hidden;
+		transition: backround-color $transion,
+			transform $transion;
+
+		&:hover {
+			background-color: #176eb5;
+			transform: scale(1.03);
+		}
+	}
+}
+
+
+@media screen and (min-width:1200px) {
+	.studio-hero {
+		text-align: center;
+		background-color: #2f303a;
+		padding: 200px 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 1600px;
+		width: 100%;
+		height: 600px;
+		margin: 0 auto;
+		background-size: cover;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)),
+			url('../images/studio/hero-Img.jpg');
+	}
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.studio-hero {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)),
+				url('../images/studio/hero-Img-2.jpg');
+		}
+	}
+
+	.studio-hero__title {
+		font-size: 44px;
+		line-height: 1.36;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		align-items: center;
+		color: #ffffff;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 45px;
+		width: 612px;
+	}
+
+	.studio-hero__button {
+		width: 216px;
+		height: 50px;
+		background: $accent-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		display: inline-block;
+		border: 1px solid transparent;
+		overflow: hidden;
+		transition: backround-color $transion,
+			transform $transion;
+
+		&:hover {
+			background-color: #176eb5;
+			transform: scale(1.03);
+		}
+	}
+}

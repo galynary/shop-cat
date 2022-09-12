@@ -1,0 +1,40 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+address {
+	font-style: normal;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--text-font-size);
+	color: var(--accent-color);
+	justify-content: center;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0px 15px;
+}
