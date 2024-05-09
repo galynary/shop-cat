@@ -3,14 +3,342 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 9</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <title>Color switcher</title>
+    <link rel="stylesheet" href="css/menu-list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
   </head>
   <body>
-    <ul>
-      <li><a href="01-color-switcher.html">Color switcher</a></li>
-      <li><a href="02-timer.html">Countdown timer</a></li>
-      <li><a href="03-promises.html">Promise generator</a></li>
-    </ul>
+    <p><a href="index.html">Go back</a></p>
+
+    <div class="container">
+      <div class="container-buttons">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-value="about">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-value="services">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-value="products">Products</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-value="contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-palete">
+        <!---- <div class="color-card">
+            <div class="color-swatch"
+            data-hex="955014"
+            data-rgb="149,80,20"></div>
+            <div class="color-meta">
+              <p class="text-meta">HEX:#955014</p>
+              <p class="text-meta">149,80,20</p>
+            </div>
+          </div>-->
+      </div>
+      <div class="container-search">
+        <div class="container-input-left">
+          <input type="text" class="input-search" />
+          <p class="text-output">Значення :</p>
+        </div>
+        <div class="container-input-rigth">
+          <h3 class="input-text">Пароль повинен містити менше 7 символів</h3>
+          <input type="text" class="input-rigth-search" />
+        </div>
+      </div>
+
+      <div class="container-filter">
+        <form class="form">
+          <label>
+            пошук скілів...
+            <input type="text" placeholder="Пошук..." id="filter" />
+          </label>
+          <ul class="list-js"></ul>
+        </form>
+      </div>
+      <!----   <div class="container-img">
+        <ul class="list-img-dog">
+          <li class="item-img">
+            <img loading="lazy" src="./image/dog-1.jpg" class="img-dog" />
+          </li>
+          <li class="item-img">
+            <img loading="lazy" src="./image/dog-2.jpg" class="img-dog" />
+          </li>
+          <li class="item-img">
+            <img loading="lazy" src="./image/dog-3.jpg" class="img-dog" />
+          </li>
+        </ul>
+      </div>
+      <div class="container-cat">
+        <ul class="image-list">
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-1.webp 1x, image/cat-1-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-1.jpg 1x, image/cat-1.jpg 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-1-768.webp 1x, image/cat-1-2-768.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-1-1-768.jpg 1x, image/cat-1-2-768.jpg 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-1-480.webp 1x, image/cat-1-480.webp-2 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-1-1-480.jpg 1x, image/cat-1-2-480.jpg 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-1-1-480.jpg"
+                alt="cat-1"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-2.webp 1x, image/cat-2-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-2-1200-1.jpg 1x, image/cat-2-1200-2.jpg 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-2-768.webp 1x, image/cat-2-768-2.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-2-768-1.jpg 1x, image/cat-2-768-2.jpg-2 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-2-480-1.webp 1x, image/cat-2-480-2.webp 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-2-480-1.jpg 1x, image/cat-2-480-2.jpg2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-2-480-1.jpg"
+                alt="cat-1"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-3-1.webp 1x, image/cat-3-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-3-1-1200.jpg 1x, image/cat-3-2-1200.jpg-2 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-3-1.webp 1x, image/cat-3-2.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-3-1-768.jpg 1x, image/cat-3-2-768.jpg 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-3-1-480.webp 1x, image/cat-3-2.webp 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-3-1-480.jpg 1x, image/cat-3-2-480.jpg 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-3-1-480.jpg"
+                alt="cat-1"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-4-1.webp 1x, image/cat-4-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-4-1-1200.jpg 1x, image/cat-4-2-1200.jpg 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-4-1-768.webp 1x, image/cat-4-2-768.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-4-1-768.jpg 1x, image/cat-4-2-768.jpg-2 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-4-1-480.webp 1x, image/cat-4-2-480.webp 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-4-1-480.jpg 1x, image/cat-4-2-480.jpg2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-4-1-480.jpg"
+                alt="cat-1"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-5-1.webp 1x, image/cat-5-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-5-1-1200.jpg 1x, image/cat-5-2-1200.jpg 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-5-1-768.webp 1x, image/cat-5-2-768.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-5-1-768.jpg 1x, image/cat-5-2-768.jpg 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-5-1-480.webp 1x, image/cat-5-2-480.webp 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-5-1-480.jpg 1x, image/cat-5-2-480.jpg 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-5-1-480.jpg "
+                alt="cat-3"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+          <li class="image-item">
+            <picture>
+              <source
+                srcset="image/cat-6-1.webp 1x, image/cat-6-2.webp 2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-6-1-1200.jpg 1x, image/cat-6-2-1200.jpg2x"
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-6-1-768.webp 1x, image/cat-6-2-768.webp 2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-6-1-768.jpg 1x, image/cat-6-1-768.jpg2x"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-6-1-480.webp 1x, image/cat-6-2-480.webp 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <source
+                srcset="image/cat-6-1-480.jpg 1x, image/cat-6-2-480.jpg 2x"
+                media="(min-width:480px)"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="image/cat-6-1-480.jpg "
+                alt="cat-1"
+                class="image-cat"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>-->
+
+      <div class="wrap-container-game">
+        <div class="container-game"></div>
+        <h2 class="game-title"></h2>
+      </div>
+      <div class="wrap-container-cats">
+        <ul class="cats-list"></ul>
+      </div>
+    </div>
+    <script src="
+      https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js
+      "></script>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="js/01-menu-list.js" type="module"></script>
+    <script src="js/02-color-palete.js" type="module"></script>
+    <script src="js/debounce.js" type="module"></script>
+    <script src="js/filter.js" type="module"></script>
+    <script src="js/loading-lozy.js" type="module"></script>
+    <script src="js/game.js" type="module"></script>
+    <script src="js/image-js.js" type="module"></script>
+    <script src="js/arayProducts.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
   </body>
 </html>
