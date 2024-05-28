@@ -18,14 +18,23 @@
     "url": "https://github.com/galynary/js-test/issues"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "debounce": "^2.0.0",
     "flatpickr": "^4.6.13",
-    "modern-normalize": "^1.1.0"
+    "lazyload": "^2.0.0-rc.2",
+    "modern-normalize": "^1.1.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "throttle": "^1.0.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "assert": "^2.1.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

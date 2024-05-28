@@ -261,3 +261,6 @@ label {
     grid-gap: 10px;
   }
 }
+.feedback-form {
+  max-width: 600px;
+}

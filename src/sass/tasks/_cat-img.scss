@@ -1,0 +1,41 @@
+.cats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+.modal {
+  background-color: rgb(216, 219, 222);
+  padding: 20px;
+}
+.cat-img {
+  box-shadow: 10px 10px 20px #00000060;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-error {
+  color: red;
+}
+.cat-img:hover {
+  transform: scale(1.05);
+}
+.modal-cat-name {
+  font-weight: 500;
+}
+.modal-price {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .cats-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cats-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+  }
+}

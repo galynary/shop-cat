@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color switcher</title>
-    <link rel="stylesheet" href="css/menu-list.css" />
+    <!--- <link rel="stylesheet" href="css/menu-list.css" />--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
@@ -326,19 +333,36 @@
       <div class="wrap-container-cats">
         <ul class="cats-list"></ul>
       </div>
+      <!------застосування localStorage-------->
+      <!--<form class="feedback-form">
+        <label
+          ><b>імя</b> <input type="text" name="name" placeholder="введіть імя"
+        /></label>
+        <label>
+          <b>повідомлення</b>
+          <textarea class="feedback-form-textarea" name="message"></textarea>
+          <button type="submit">Залишити відгук</button>
+        </label>
+      </form>-->
+      <include src="./partials/products.html"></include>
+      <include src="./partials/localStorage.html"></include>
+      <include src="./partials/favorite.html"></include>
     </div>
+
     <script src="
       https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js
       "></script>
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
     <script src="js/01-menu-list.js" type="module"></script>
-    <script src="js/02-color-palete.js" type="module"></script>
     <script src="js/debounce.js" type="module"></script>
+    <script src="js/favorite.js" type="module"></script>
     <script src="js/filter.js" type="module"></script>
-    <script src="js/loading-lozy.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
+    <!--- <script src="js/loading-lozy.js" type="module"></script>-->
     <script src="js/game.js" type="module"></script>
     <script src="js/image-js.js" type="module"></script>
     <script src="js/arayProducts.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="js/products.js" type="module"></script>
+    <script src="js/local-storage.js" type="module"></script>
   </body>
 </html>

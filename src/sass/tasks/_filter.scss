@@ -1,0 +1,26 @@
+.container-filter {
+  padding: 50px 20px;
+  background-color: rgb(182, 221, 237);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+label {
+  display: grid;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+#filter {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+}
+.list-js {
+  display: grid;
+  gap: 5px;
+  padding: 0px;
+}
