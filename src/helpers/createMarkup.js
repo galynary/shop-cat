@@ -16,10 +16,10 @@ function createMarkup(arr, list) {
       )
       .join('');
   } else {
-      markup = `<li> 
+    markup = `<li> 
     <img src="https://indexsy.com/wp-content/uploads/2023/05/What-is-404-error.jpg" alt="404" style="max-width: 500px;" />
     </li>`;
   }
-  list.insertAdjacentHTML('beforeend', markup);
+  list.innerHTML = markup;
 }
 export { createMarkup };

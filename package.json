@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://galynary.github.io/js-test",
+  "homepage": "https://galynary.github.io/js-test_2",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /js-test/"
+    "build": "parcel build src/*.html --public-url /js-test_2/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galynary/js-test.git"
+    "url": "git+https://github.com/galynary/js-test_2.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/galynary/js-test/issues"
+    "url": "https://github.com/galynary/js-test_2/issues"
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
