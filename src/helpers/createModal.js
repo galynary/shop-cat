@@ -1,6 +1,8 @@
 import * as basicLightbox from 'basiclightbox';
-import { products } from '../helpers/products';
+import 'basiclightbox/dist/basicLightbox.min.css';
+
 import { closeModal } from './closeModal';
+
 function createModal(product) {
   //const option = {
   // onShow() {
@@ -18,10 +20,7 @@ function createModal(product) {
       <h3>${product.price}</h3>
       <p>${product.description}</p>
      </div>
-     <div class="buttons">
-     <button type="button" class="js-basket">Додати до корзини</button>
-     <button type="button" class="js-favorite">Додати до улюблених</button>
-   </div>
+   
   `,
     {
       handler: null,
@@ -37,5 +36,4 @@ function createModal(product) {
   );
   instance.show();
 }
-
 export { createModal };
