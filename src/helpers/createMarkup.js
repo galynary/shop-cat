@@ -3,16 +3,19 @@ function createMarkup(arr, list) {
   if (arr.length) {
     markup = arr
       .map(
-        ({ id, img, name }) => `
-      <li data-id="${id}" class="js-card">
-        <img src="${img}" alt="${name}" style="max-width: 500px;" />
-        <h2>${name}</h2>
+        ({ id, img, name, price }) => `
+      <li data-id="${id}" class="js__card">
+        <img src="${img}" alt="${name}" class="js-card-img"/>
+        <div class="wrap-container-description">
+         <h2>${name}</h2>
+         <h3>Ціна: ${price} мяу</h3>
         <p><a class="js-info" href="#">Більше інформації</a></p>
         <div class="buttons">
-          <button type="button" class="js-basket">Додати до корзини</button>
-          <button type="button" class="js-favorite">Додати до улюблених</button>
+          <button type="button" class="js-basket button" >Додати до корзини</button>
+          <button type="button" class="js-favorite button">Додати до улюблених</button>
         </div>
-      </li>`
+        </div>
+       </li>`
       )
       .join('');
   } else {

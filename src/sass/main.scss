@@ -1,4 +1,3 @@
-.modal {
-  background-color: antiquewhite;
-  padding: 30px;
-}
+@import './utils/vars';
+@import './utils/mixsins';
+@import './layouts/main';

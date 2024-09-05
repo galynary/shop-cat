@@ -36,10 +36,10 @@ export { createBasketCard };*/
 import { createBasketCard } from '../helpers/createBasketCard';
 import { createModal } from '../helpers/createModal';
 import { products } from '../helpers/products';
-import { comon } from '../comon';
+import { comon } from './comon';
 import { removeFromArray } from '../helpers/removeFromArray';
 
-const list = document.querySelector('.chekcout-list');
+const list = document.querySelector('.bascket__list');
 const basketArr = JSON.parse(localStorage.getItem(comon.KEY_BASKET)) ?? [];
 list.addEventListener('click', onClick);
 
@@ -63,8 +63,16 @@ function onClick(evt) {
 createBasketCard(basketArr, list);
 
 function findProduct(elem) {
-  const productId = Number(elem.closest('.js-card').dataset.id);
+  const productId = Number(elem.closest('.js__card').dataset.id);
   return products.find(({ id }) => id === productId);
 }
+
+function priceProducts() {
+  return basketArr.reduce(
+    (priceProduct, product) => priceProduct + product.price,
+    0
+  );
+}
+priceProducts();
 
 export { createBasketCard };

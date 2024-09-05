@@ -1,10 +1,10 @@
 import { createFavoriteCard } from '../helpers/createFavoriteCard';
 import { createModal } from '../helpers/createModal';
 import { products } from '../helpers/products';
-import { comon } from '../comon';
+import { comon } from './comon';
 import { removeFromArray } from '../helpers/removeFromArray';
 
-const list = document.querySelector('.favorite-list');
+const list = document.querySelector('.favorite__list');
 const favoriteArr = JSON.parse(localStorage.getItem(comon.KEY_FAVORITE)) ?? [];
 list.addEventListener('click', onClick);
 
@@ -20,7 +20,7 @@ function onClick(evt) {
     const product = findProduct(evt.target);
     if (product) {
       removeFromArray(favoriteArr, product);
-      localStorage.setItem(comon.KEY_BASKET, JSON.stringify(favoriteArr));
+      localStorage.setItem(comon.KEY_FAVORITE, JSON.stringify(favoriteArr));
       createFavoriteCard(favoriteArr, list); // Update the UI after removal
     }
   }
@@ -29,7 +29,7 @@ function onClick(evt) {
 createFavoriteCard(favoriteArr, list);
 
 function findProduct(elem) {
-  const productId = Number(elem.closest('.js-card').dataset.id);
+  const productId = Number(elem.closest('.js__card').dataset.id);
   return products.find(({ id }) => id === productId);
 }
 

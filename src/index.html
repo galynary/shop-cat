@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Котики</title>
-    <link rel="stylesheet" href="./main.scss" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
@@ -17,21 +18,28 @@
     />
   </head>
   <body>
-    <div class="container__products">
-      <div class="js-list-products">
-        <ul class="wrap-menu">
-          <li>
-            <a href="./favorite.html">favorite</a>
+    <header class="js-list-products header">
+      <div class="header__inner">
+        <div class="wrap__logo">
+          <a href="" class="logo">Мяу-Мяв</a>
+        </div>
+
+        <ul class="wrap__menu">
+          <li class="menu__link">
+            <a href="./favorite.html" class="menu__link">Улюблені</a>
           </li>
 
-          <li>
-            <a href="./chekcout.html">chekcout</a>
+          <li class="menu__link">
+            <a href="./chekcout.html" class="menu__link">Корзина</a>
           </li>
         </ul>
-        <input type="text" class="js-search" />
       </div>
-      <ul class="js-list"></ul>
-    </div>
+
+      <p class="bascket-list__message"></p>
+    </header>
+    <main class="container__products container">
+      <ul class="js__list"></ul>
+    </main>
 
     <script src="js/home.js" type="module"></script>
 
